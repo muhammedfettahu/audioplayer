@@ -128,10 +128,33 @@ function setProgressBar(e) {
     music.currentTime = (clickX / width) * music.duration;
 }
 
+const repeatBtn = document.getElementById('repeat');
+let isRepeating = false;
+
+// Toggle repeat mode
+function toggleRepeat() {
+    isRepeating = !isRepeating;
+    // Change the button color based on repeat state
+    repeatBtn.style.color = isRepeating ? 'green' : ''; // Set green when active
+    repeatBtn.setAttribute('title', isRepeating ? 'Repeat On' : 'Repeat Off');
+}
+
+// Handle song end based on repeat state
+music.addEventListener('ended', () => {
+    if (isRepeating) {
+        playMusic(); // Replay the current song
+    } else {
+        changeMusic(1); // Move to the next song
+    }
+});
+
+// Add event listener to the repeat button
+repeatBtn.addEventListener('click', toggleRepeat);
+
+// Other event listeners (unchanged)
 playBtn.addEventListener('click', togglePlay);
 prevBtn.addEventListener('click', () => changeMusic(-1));
 nextBtn.addEventListener('click', () => changeMusic(1));
-music.addEventListener('ended', () => changeMusic(1));
 music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
 
