@@ -37,6 +37,56 @@ body{
     transform: scale(1.1);
 }
 
+.player-controls {
+    position: relative;
+    top: -15px;
+    left: 90px; /* Adjust to fit the overall alignment */
+    width: 220px; /* Increased to fit the repeat button */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure buttons align vertically */
+}
+
+.fa-solid {
+    font-size: 30px;
+    color: #666;
+    margin-right: 20px; /* Reduced spacing for better alignment */
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:last-child {
+    margin-right: 0; /* Ensure no extra spacing for the last button */
+}
+
+.fa-solid:hover {
+    filter: brightness(40%);
+}
+
+.play-button {
+    font-size: 44px;
+    position: relative;
+    top: 3px;
+}
+
+#repeat {
+    font-size: 30px;
+    cursor: pointer;
+    color: inherit; /* Match the default color of other buttons */
+    transition: color 0.3s ease;
+}
+
+#repeat.active {
+    color: green; /* Highlight active repeat state */
+}
+
+#repeat:hover {
+    filter: brightness(40%); /* Optional hover effect */
+}
+
+
+
 .container{
     background-color: #e7e7e7;
     height: 500px;
