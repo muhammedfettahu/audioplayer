@@ -77,6 +77,14 @@ body{
     transition: color 0.3s ease;
 }
 
+#repeat.active {
+    color: green; /* Highlight active repeat state */
+}
+
+#repeat:hover {
+    filter: brightness(100%); /* Optional hover effect */
+}
+
 .container{
     background-color: #e7e7e7;
     height: 500px;
