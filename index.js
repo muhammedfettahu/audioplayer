@@ -15,7 +15,7 @@ const music = new Audio();
 const songs = [
     {
         path: 'assets/1.mp3',
-        displayName: 'Bashair - Nasheed',
+        displayName: 'Murujan - Nasheed',
         cover: 'assets/1.jpg',
         artist: 'UNKNOWN',
     },
@@ -30,7 +30,43 @@ const songs = [
         displayName: 'FIRUBUI - Nasheed',
         cover: 'assets/3.jpg',
         artist: 'UNKNOWN',
-    }
+    },
+    {
+        path: 'assets/4.mp3',
+        displayName: 'Bashair - Nasheed',
+        cover: 'assets/4.jpg',
+        artist: 'UNKNOWN',
+    },
+    {
+        path: 'assets/5.mp3',
+        displayName: 'Shay Shay - Nasheed',
+        cover: 'assets/5.jpg',
+        artist: 'UNKNOWN',
+    },
+    {
+        path: 'assets/6.mp3',
+        displayName: 'Ya dhakir al-Ashabi - Nasheed',
+        cover: 'assets/6.jpg',
+        artist: 'UNKNOWN',
+    },
+    {
+        path: 'assets/7.mp3',
+        displayName: 'Baligh Maleek - Nasheed',
+        cover: 'assets/7.jpg',
+        artist: 'UNKNOWN',
+    },
+    {
+        path: 'assets/8.mp3',
+        displayName: 'Ghuraba - Nasheed',
+        cover: 'assets/8.jpg',
+        artist: 'UNKNOWN',
+    },
+    {
+        path: 'assets/9.mp3',
+        displayName: 'Akhi Anta Hurun - Nasheed',
+        cover: 'assets/9.jpg',
+        artist: 'UNKNOWN',
+    },
 ];
 
 let musicIndex = 0;
