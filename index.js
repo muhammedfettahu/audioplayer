@@ -67,6 +67,24 @@ const songs = [
         cover: 'assets/9.jpg',
         artist: 'UNKNOWN',
     },
+    {
+        path: 'assets/10.mp3',
+        displayName: 'هذب فؤادك بالحياة',
+        cover: 'assets/10.jpg',
+        artist: 'UNKNOWN',
+    },
+    {
+        path: 'assets/11.mp3',
+        displayName: 'ذاك شيخ المعي',
+        cover: 'assets/11.jpg',
+        artist: 'UNKNOWN',
+    },
+    {
+        path: 'assets/12.mp3',
+        displayName: 'Al-Lamiyyah - Ustadh AbdulRahman Hassan',
+        cover: 'assets/12.jpg',
+        artist: 'UNKNOWN',
+    },
 ];
 
 let musicIndex = 0;
