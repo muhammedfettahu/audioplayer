@@ -81,7 +81,7 @@ const songs = [
     },
     {
         path: 'assets/12.mp3',
-        displayName: 'Al-Lamiyyah - Ustadh AbdulRahman Hassan',
+        displayName: 'Al-Lamiyyah',
         cover: 'assets/12.jpg',
         artist: 'UNKNOWN',
     },
